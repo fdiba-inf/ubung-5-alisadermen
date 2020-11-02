@@ -26,6 +26,7 @@ public class Search {
             leftIndex = middleIndex + 1;
           }
         */
+        /* ne mi minava purviq test s toq kod
         int numberIndex = -1;
         int leftIndex = 0;
         int rightIndex = numbers.length - 1;
@@ -44,7 +45,14 @@ public class Search {
             } else {
                 leftIndex = middleIndex + 1;
             }
-        } while (leftIndex <= rightIndex);
+        } while (leftIndex <= rightIndex); */
+        int numberIndex = -1;
+        for(int index = 0 ; index<numbers.length; index++){
+          if(number==numbers[index]){
+            numberIndex=index;
+            break;
+          }
+        }
 
 
         System.out.println("Number index: " + numberIndex);
